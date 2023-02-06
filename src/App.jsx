@@ -7,6 +7,8 @@ import UseReducer from "./UseReducer";
 import RecordsReducer from "./RecordReducer";
 import UseContext from "./UseContext";
 import { RecordContext } from "./RecordContext"; //Create Context From here
+import ObjectArray from "./ObjectArray";
+import ArrayAddSplice from "./ArrayAddSplice";
 
 function App(props) {
   const myArray = ["aaa", "bbb", "ccc", "ddd", "abcd"];
@@ -25,6 +27,8 @@ function App(props) {
       <ConditionRender showitem1={true} showitem2={false} showitem3={true} />
       <UseReducer records={records} dispatch={dispatch} />
       <UseContext />
+      <ObjectArray />
+      <ArrayAddSplice/>
     </div>
     </RecordContext.Provider>
   );
